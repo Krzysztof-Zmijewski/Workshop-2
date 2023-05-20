@@ -4,6 +4,7 @@ import com.mysql.cj.xdevapi.SqlResult;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.*;
+import java.util.Arrays;
 
 public class UserDao {
     private static final String CREATE_USER_QUERY =
@@ -87,6 +88,30 @@ public class UserDao {
         catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Błąd SQL");
+        }
+    }
+    private User[] addToArray(User u, User[] users) {
+        User[] tmpUsers = Arrays.copyOf(users, users.length + 1);
+        tmpUsers[users.length] = u;
+        return tmpUsers;
+    }
+    public User[] findAll() {
+        try (Connection conn = DbUtil.connectUSERS()) {
+            User[] users = new User[0];
+            PreparedStatement statement = conn.prepareStatement(READ_USER_QUERY);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                User user = new User();
+                user.setId(resultSet.getInt("id"));
+                user.setUserName(resultSet.getString("username"));
+                user.setEmail(resultSet.getString("email"));
+                user.setPassword(resultSet.getString("password"));
+                users = addToArray(user, users);
+            }
+            return users;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
         }
     }
 

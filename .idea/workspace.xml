@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f8a48ae-bdc1-48bc-8bbf-8ea5cdd9b381" name="Changes" comment="Create v.1">
+    <list default="true" id="1f8a48ae-bdc1-48bc-8bbf-8ea5cdd9b381" name="Changes" comment="Update and Delete v.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/MainDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/MainDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +112,7 @@
       <updated>1684428248790</updated>
       <workItem from="1684428250001" duration="2611000" />
       <workItem from="1684504437011" duration="3520000" />
-      <workItem from="1684586693876" duration="4121000" />
+      <workItem from="1684586693876" duration="5048000" />
     </task>
     <task id="LOCAL-00001" summary="Tworzenie">
       <created>1684428340739</created>
@@ -129,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684508928040</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update and Delete v.1">
+      <created>1684590882907</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684590882907</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +155,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tworzenie" />
     <MESSAGE value="Create v.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create v.1" />
+    <MESSAGE value="Update and Delete v.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update and Delete v.1" />
   </component>
 </project>
